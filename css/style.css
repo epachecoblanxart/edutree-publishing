@@ -1,0 +1,123 @@
+/* Estils generals */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Capçalera */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Menú de navegació */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background: #444;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5em;
+}
+
+nav ul li a:hover {
+    background: #555;
+    border-radius: 5px;
+}
+
+/* Enllaç actiu al menú */
+nav ul li a.active {
+    color: #fff;
+    background-color: #007BFF;
+    border-radius: 5px;
+    padding: 0.5em;
+    text-decoration: none;
+}
+
+/* Cos principal */
+main {
+    padding: 2em;
+}
+
+/* Contenidor de benvinguda */
+.welcome-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+}
+
+/* Estils del contingut de text */
+.text-content {
+    flex: 1;
+    min-width: 300px;
+}
+
+/* Estils del contingut d'imatge */
+.image-content {
+    flex: 1;
+    min-width: 300px;
+}
+
+.image-content img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Media query per a dispositius mòbils */
+@media (max-width: 768px) {
+    .welcome-container {
+        flex-direction: column;
+    }
+    
+    .text-content {
+        order: 1; /* Primer el text */
+    }
+    
+    .image-content {
+        order: 2; /* Després la imatge */
+    }
+}
+
+/* Peu de pàgina */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+/* Botons amb efecte hover */
+button {
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+    transition: 0.3s;
+}

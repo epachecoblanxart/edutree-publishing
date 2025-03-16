@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive només amb Flexbox</title>
+  <style>
+    .container {
+      display: flex;
+      flex-wrap: wrap; /* Permet que els elements es moguin a la següent línia */
+      gap: 10px;
+    }
+
+    .box {
+      flex: 1 1 calc(33.33% - 10px); /* Amplada automàtica del 33.33% */
+      background-color: lightblue;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box">Caixa 1</div>
+    <div class="box">Caixa 2</div>
+    <div class="box">Caixa 3</div>
+  </div>
+</body>
+</html>
